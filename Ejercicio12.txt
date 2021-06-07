@@ -9,17 +9,16 @@ Proceso Alturas
 		Leer edad 
 		Leer sexo
 		Leer altura
-		Si (altura < 0) Entonces
-		Sino
+		Si (altura > 0) Entonces
 			totalE <- totalE + edad
 			contE+++
-		Fin Si
-		Si (sexo == F) Entonces
-			totalF <- totalF + altura
-			contF++
-		Sino 
-			totalM <- totalM + altura
-			contM++
+			Si (sexo == F) Entonces
+				totalF <- totalF + altura
+				contF++
+			Sino 
+				totalM <- totalM + altura
+				contM++
+			Fin Si
 		Fin Si
 	Mientras (altura >=0)
 	promedioM <- totalM/contM
