@@ -1,0 +1,29 @@
+Proceso Alturas
+	totalM <- 0
+	totalF <- 0
+	totalE <- 0
+	contM <- 0
+	contF <- 0
+	contE <- 0
+	Hacer 
+		Leer edad 
+		Leer sexo
+		Leer altura
+		Si (altura < 0) Entonces
+		Sino
+			totalE <- totalE + edad
+			contE+++
+		Fin Si
+		Si (sexo == F) Entonces
+			totalF <- totalF + altura
+			contF++
+		Sino 
+			totalM <- totalM + altura
+			contM++
+		Fin Si
+	Mientras (altura >=0)
+	promedioM <- totalM/contM
+	promedioF <- totalF/contF
+	promedioE <- totalE/contE
+	Escribir "El promedio de altura de mujeres es ",promedioF,", el de hombres es ",promedioM,", y el promedio de edades es ",promedioE
+FinProceso
